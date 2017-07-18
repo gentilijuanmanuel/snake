@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Snake</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" media="screen" rel="StyleSheet" type="text/css">
+    <link href="Snake.css" media="screen" rel="StyleSheet" type="text/css">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Snake</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+        </div>
+      </div>
+    </nav>
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Let's play Snake!</h1>
+        <p>Snake es un clásico en el mundo de los videojuegos.</p>
+      </div>
+    </div>
+    <div class="container text-center">
+      <div class="div">
+        <canvas width="200" height="200" id="areaDeDibujo"></canvas>
+      </div>
+      <br>
+      <br>
+      <button id="btnComenzar" class="btn btn-primary" type="button" name="button" onclick="comenzarJuego()">Comenzar juego!</button>
+      <br>
+      <br>
+      <div id="region-puntajes">
+        <h1>Tabla de puntajes</h1>
+        <table id="tabla-puntaje" class="table table-hover table-bordered table-striped">
+          <tr>
+            <th>Nombre</th>
+            <th>Puntaje</th>
+            <th>Tiempo</th>
+          </tr>
+          <tr>
+          </tr>
+        </table>
+      </div>
+      <hr>
+      <footer>
+        <address>
+          <strong>Gentili, Juan Manuel - Polinesi, Gianfranco.</strong><br>
+          Arroyo Seco, Santa Fe - Argentina<br>
+        </address>
+        <address>
+          <strong>Juan Manuel:</strong><br>
+          <a href="mailto:#">gentilijuanmanuel80974a@gmail.com</a>
+          <br>
+          <strong>Gianfranco:</strong><br>
+          <a href="mailto:#">gianfrancopolinesi@gmail.com</a>
+        </address>
+      </footer>
+    </div>
+    <script src="Snake.js"></script>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="manejar-tabla.js"></script>
+  </body>
+</html>
